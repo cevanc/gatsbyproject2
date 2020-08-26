@@ -33,7 +33,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-        bucketName: "arn:aws:s3:::phytin-site",
+        bucketName: "phytin-site",
       },
     },
   ],
