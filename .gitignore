@@ -67,3 +67,6 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+#get rid of node-modules?
+node_modules
