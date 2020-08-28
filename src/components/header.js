@@ -5,7 +5,7 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: `purple`,
       marginBottom: `1.45rem`,
     }}
   >
@@ -13,7 +13,7 @@ const Header = ({ siteTitle }) => (
       style={{
         margin: `0 auto`,
         maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        padding: `0.1525rem 0.0875rem`,
       }}
     >
       <h1 style={{ margin: 0 }}>
@@ -36,7 +36,7 @@ Header.propTypes = {
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
+  siteTitle: `Phytiŋ`,
 }
 
 export default Header
