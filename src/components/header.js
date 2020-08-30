@@ -10,9 +10,10 @@ const Header = ({ siteTitle }) => (
       alignItems: "space-between",
       position: "fixed",
       background: `rgb(139,0,139)`,
-      marginBottom: `1rem`,
+      marginBottom: `0`,
       margin: "0 .2rem 0 0",
       padding: `0.1525rem 0.0875rem`,
+      width: "100vw",
     }}
   >
     <div

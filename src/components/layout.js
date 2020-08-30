@@ -28,20 +28,28 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
-          margin: `0 auto`,
+          margin: `0 0`,
           maxWidth: "100%",
-          padding: `0 1.0875rem 1.45rem`,
+          padding: `0 1.0875rem`,
         }}
       >
         <div
           id="spacer"
           style={{
             margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0 1.0875rem 6rem`,
+            maxWidth: "100vw",
+            padding: `0 1.0875rem 6.5rem`,
           }}
         />
-        <main>{children}</main>
+        <main
+          style={{
+            alignItems: "centered",
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          {children}
+        </main>
       </div>
     </>
   )
