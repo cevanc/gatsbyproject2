@@ -8,15 +8,16 @@ const Header = ({ siteTitle }) => (
       display: "flex",
       flexDirection: "row",
       alignItems: "space-between",
-      position: "sticky",
+      position: "fixed",
       background: `rgb(139,0,139)`,
       marginBottom: `1rem`,
+      margin: "0 .2rem 0 0",
+      padding: `0.1525rem 0.0875rem`,
     }}
   >
     <div
       style={{
-        margin: ".5rem .2rem 1.25rem .4rem",
-        maxWidth: 960,
+        margin: ".5rem .2rem 0 .4rem",
         padding: `0.1525rem 0.0875rem`,
       }}
     >
