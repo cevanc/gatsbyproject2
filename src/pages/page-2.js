@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 const SecondPage = () => (
   <Layout>
-    <SEO title="Page two" />
+    <SEO title="page-2" />
     <iframe
       title="SOL"
       style={{ border: "0", width: "350px", height: "350px" }}
