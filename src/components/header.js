@@ -19,7 +19,6 @@ const Header = ({ siteTitle }) => (
     <div
       style={{
         margin: ".5rem .2rem 0 .4rem",
-        padding: `0.1525rem 0.0875rem`,
       }}
     >
       <h1 style={{ margin: 0 }}>
@@ -42,6 +41,7 @@ const Header = ({ siteTitle }) => (
           color: `white`,
           textDecoration: `none`,
           padding: "10px",
+          fontSize: "16px",
         }}
       >
         Releases
@@ -53,6 +53,7 @@ const Header = ({ siteTitle }) => (
           color: `white`,
           textDecoration: `none`,
           padding: "10px",
+          fontSize: "16px",
         }}
       >
         Other
@@ -61,9 +62,12 @@ const Header = ({ siteTitle }) => (
     <div
       id="linkBox"
       style={{
-        margin: "30px",
-        display: "flex",
-        justifyContent: "space between",
+        marginTop: "2vh",
+        maxWidth: "4vw",
+        minWidth: "3.9vw",
+        display: "inline-grid",
+        gridColumnGap: ".5vw",
+        gridRowGap: ".05vh",
       }}
     >
       <a
@@ -71,17 +75,21 @@ const Header = ({ siteTitle }) => (
         id="profile-link"
         target="_blank"
         rel="noreferrer"
-        style={{ padding: "0 5% 0 0" }}
+        style={{
+          padding: "0 5% 0 0",
+          gridColumnStart: "1",
+          gridColumnEnd: "2",
+        }}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="30"
+          width="20"
+          height="20"
           viewBox="0 0 24 24"
           style={{
             backgroundImage:
               'URL("https://www.iconsdb.com/icons/preview/white/square-xxl.png")',
-            backgroundSize: "20px 20px",
+            backgroundSize: "15px 15px",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
           }}
@@ -94,17 +102,21 @@ const Header = ({ siteTitle }) => (
         id="profile-link"
         target="_blank"
         rel="noreferrer"
-        style={{ padding: "0 5% 0 0" }}
+        style={{
+          padding: "0 5% 0 0",
+          gridColumnStart: "2",
+          gridColumnEnd: "3",
+        }}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="30"
+          width="20"
+          height="20"
           viewBox="0 0 24 24"
           style={{
             backgroundImage:
               'URL("https://www.iconsdb.com/icons/preview/white/square-xxl.png")',
-            backgroundSize: "20px 20px",
+            backgroundSize: "15px 15px",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
           }}
@@ -117,17 +129,21 @@ const Header = ({ siteTitle }) => (
         id="profile-link"
         target="_blank"
         rel="noreferrer"
-        style={{ padding: "0 5% 0 0" }}
+        style={{
+          padding: "0 5% 0 0",
+          gridColumnStart: "1",
+          gridColumnEnd: "2",
+        }}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="30"
+          width="20"
+          height="20"
           viewBox="0 0 24 24"
           style={{
             backgroundImage:
               'URL("https://www.iconsdb.com/icons/preview/white/square-xxl.png")',
-            backgroundSize: "20px 20px",
+            backgroundSize: "15px 15px",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
           }}
@@ -140,17 +156,21 @@ const Header = ({ siteTitle }) => (
         id="profile-link"
         target="_blank"
         rel="noreferrer"
-        style={{ padding: "0 5% 0 0" }}
+        style={{
+          padding: "0 5% 0 0",
+          gridColumnStart: "2",
+          gridColumnEnd: "3",
+        }}
       >
         <svg
-          width="30"
-          height="30"
+          width="20"
+          height="20"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           style={{
             backgroundImage:
               'URL("https://www.iconsdb.com/icons/preview/white/square-xxl.png")',
-            backgroundSize: "20px 20px",
+            backgroundSize: "15px 15px",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
           }}
