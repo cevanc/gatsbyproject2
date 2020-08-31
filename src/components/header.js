@@ -1,40 +1,44 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+//import Image from "../components/image"
+import PhytinLogo from "../components/phytinLogo"
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      display: "flex",
-      flexDirection: "row",
-      alignItems: "space-between",
+      display: "grid",
+      justifyContent: "start",
+      gridColumnGap: ".5vw",
       position: "fixed",
       background: `rgb(139,0,139)`,
-      marginBottom: `0`,
-      margin: "0 .2rem 0 0",
-      padding: `0.1525rem 0.0875rem`,
+      padding: `0`,
       width: "100vw",
     }}
   >
     <div
       style={{
-        margin: ".5rem .2rem 0 .4rem",
+        margin: "12.5% 0 0 0",
+        gridColumnStart: "0",
+        gridColumnEnd: "1",
+        gridRowStart: "0",
+        gridRowEnd: "1",
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-            textAlign: "centered",
-          }}
-        >
-          <img src="_blank" alt="Phytiŋ" />
-        </Link>
-      </h1>
+      <Link to="/">
+        <PhytinLogo />
+      </Link>
     </div>
-    <div id="navbarLinks">
+    <div
+      id="navbarLinks"
+      style={{
+        gridColumnStart: "1",
+        gridColumnEnd: "2",
+        gridRowStart: "0",
+        gridRowEnd: "1",
+        margin: "15% .05vw 15% .05vw",
+      }}
+    >
       <Link
         to="/"
         style={{
@@ -65,12 +69,16 @@ const Header = ({ siteTitle }) => (
     <div
       id="linkBox"
       style={{
-        marginTop: "2vh",
+        margin: "25% 0 25% 0",
         width: "4vw",
         minWidth: "3.9vw",
         display: "inline-grid",
         gridColumnGap: ".5vw",
         gridRowGap: ".05vh",
+        gridColumnStart: "2",
+        gridColumnEnd: "3",
+        gridRowStart: "0",
+        gridRowEnd: "1",
       }}
     >
       <a
