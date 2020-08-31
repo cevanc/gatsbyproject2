@@ -38,11 +38,12 @@ const Header = ({ siteTitle }) => (
       <Link
         to="/"
         style={{
-          border: "16px solid black",
+          border: "1px solid black",
           color: `white`,
           textDecoration: `none`,
           padding: "10px",
           fontSize: "16px",
+          marginRight: "4px",
         }}
       >
         Releases
@@ -51,7 +52,7 @@ const Header = ({ siteTitle }) => (
       <Link
         to="/page-2"
         style={{
-          border: "16px solid black",
+          border: "1px solid black",
           color: `white`,
           textDecoration: `none`,
           padding: "10px",
