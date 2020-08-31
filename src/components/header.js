@@ -30,7 +30,7 @@ const Header = ({ siteTitle }) => (
             textAlign: "centered",
           }}
         >
-          {siteTitle}
+          <img src="_blank" alt="Phytiŋ" />
         </Link>
       </h1>
     </div>
@@ -38,6 +38,7 @@ const Header = ({ siteTitle }) => (
       <Link
         to="/"
         style={{
+          border: "16px solid black",
           color: `white`,
           textDecoration: `none`,
           padding: "10px",
@@ -50,6 +51,7 @@ const Header = ({ siteTitle }) => (
       <Link
         to="/page-2"
         style={{
+          border: "16px solid black",
           color: `white`,
           textDecoration: `none`,
           padding: "10px",
@@ -63,7 +65,7 @@ const Header = ({ siteTitle }) => (
       id="linkBox"
       style={{
         marginTop: "2vh",
-        maxWidth: "4vw",
+        width: "4vw",
         minWidth: "3.9vw",
         display: "inline-grid",
         gridColumnGap: ".5vw",
