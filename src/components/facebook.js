@@ -7,7 +7,7 @@ const Facebook = () => {
     query {
       placeholderImage: file(relativePath: { eq: "facebook_icnmnstr.png" }) {
         childImageSharp {
-          fluid(maxWidth: 10, maxHeight: 10) {
+          fluid(maxWidth: 40, maxHeight: 40) {
             ...GatsbyImageSharpFluid
           }
         }
