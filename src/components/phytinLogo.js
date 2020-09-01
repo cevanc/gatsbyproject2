@@ -5,9 +5,9 @@ import Img from "gatsby-image"
 const PhytinLogo = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "phytin.png" }) {
+      phytinLogo: file(relativePath: { eq: "phytin.png" }) {
         childImageSharp {
-          fixed(width: 110, height: 60) {
+          fixed(width: 110) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -15,7 +15,7 @@ const PhytinLogo = () => {
     }
   `)
 
-  return <Img fixed={data.placeholderImage.childImageSharp.fixed} />
+  return <Img fixed={data.phytinLogo.childImageSharp.fixed} />
 }
 
 export default PhytinLogo

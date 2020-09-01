@@ -1,7 +1,6 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-//import Image from "../components/image"
 import PhytinLogo from "../components/phytinLogo"
 import Facebook from "../components/facebook"
 import Soundcloud from "../components/soundcloud"
@@ -24,10 +23,9 @@ const Header = ({ siteTitle }) => (
       id="logo-holder"
       style={{
         margin: "12.5% 0 0 0",
-        gridColumnStart: "0",
-        gridColumnEnd: "1",
-        gridRowStart: "0",
-        gridRowEnd: "1",
+        gridColumn: "1/2",
+
+        gridRow: "1/2",
       }}
     >
       <Link to="/">
@@ -37,10 +35,8 @@ const Header = ({ siteTitle }) => (
     <div
       id="navbar-links"
       style={{
-        gridColumnStart: "1",
-        gridColumnEnd: "2",
-        gridRowStart: "0",
-        gridRowEnd: "1",
+        gridColumnGap: "2 / 3",
+        gridRow: "1 / 2",
         margin: "15% .05vw 15% .05vw",
       }}
     >
@@ -76,23 +72,19 @@ const Header = ({ siteTitle }) => (
     <div
       id="link-box"
       style={{
-        margin: "80% 0 80% 0",
-        width: "4vw",
-        minWidth: "3.9vw",
+        margin: "5% 0 5% 0",
+
         display: "inline-grid",
         gridColumnGap: ".5%",
         gridRowGap: ".5%",
-        gridColumnStart: "2",
-        gridColumnEnd: "3",
-        gridRowStart: "0",
-        gridRowEnd: "1",
+        gridColumn: "3 / 4",
+        gridRow: "1 / 2",
       }}
     >
       <div
         id="link-container"
         style={{
-          gridColumnStart: "1",
-          gridColumnEnd: "2",
+          gridColumn: "1/2",
         }}
       >
         <a
@@ -107,8 +99,7 @@ const Header = ({ siteTitle }) => (
       <div
         id="link-container"
         style={{
-          gridColumnStart: "2",
-          gridColumnEnd: "3",
+          gridColumn: "2/3",
         }}
       >
         <a
@@ -123,8 +114,7 @@ const Header = ({ siteTitle }) => (
       <div
         id="link-container"
         style={{
-          gridColumnStart: "1",
-          gridColumnEnd: "2",
+          gridColumn: "1/2",
         }}
       >
         <a
@@ -139,8 +129,7 @@ const Header = ({ siteTitle }) => (
       <div
         id="link-container"
         style={{
-          gridColumnStart: "2",
-          gridColumnEnd: "3",
+          gridColumn: "2/3",
         }}
       >
         <a
