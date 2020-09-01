@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Phytiŋ`,
     description: `Music - From Taipei to Columbus`,
-    author: `@phytinn`,
+    author: `@phytiŋ`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
