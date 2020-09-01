@@ -1,5 +1,30 @@
-#navbarLinks {
+/* #social-link-icon {
+  
+} */
+
+#white-box {
+  background-color: white;
+  background-size: cover;
+}
+
+#navbar-links {
   text-align: center;
+}
+
+#link-container {
+  padding: 0 0 0 0.45vw;
+  width: 3vw;
+  display: grid;
+  grid-template-columns: 100% 100%;
+  grid-template-rows: 100% 100%;
+}
+
+#profile-link {
+  /* background-image: URL("https://www.iconsdb.com/icons/preview/white/square-xxl.png");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position: center; */
+  position: true;
 }
 
 html {
