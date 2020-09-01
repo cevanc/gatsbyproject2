@@ -11,10 +11,15 @@ const Header = ({ siteTitle }) => (
   <header
     style={{
       display: "grid",
-      justifyContent: "start",
-      gridColumnGap: ".85vw",
+      gridTemplateColumns: "repeat(auto-fill, minmax(60px, 110px))",
+      justifyItems: "center",
+      alignItems: "start",
+      justifySelf: "start",
+      alignSelf: "center",
+      gridColumnGap: "25px",
       position: "fixed",
-      background: `rgb(139,0,139)`,
+      //background: `rgb(139,0,139)`,
+      border: ".5px solid black",
       padding: `0`,
       width: "100%",
     }}
@@ -22,10 +27,10 @@ const Header = ({ siteTitle }) => (
     <div
       id="logo-holder"
       style={{
-        margin: "12.5% 0 0 0",
+        alignSelf: "start",
+        justifySelf: "start",
+        margin: "0 0 0 0",
         gridColumn: "1/2",
-
-        gridRow: "1/2",
       }}
     >
       <Link to="/">
@@ -35,9 +40,10 @@ const Header = ({ siteTitle }) => (
     <div
       id="navbar-links"
       style={{
-        gridColumnGap: "2 / 3",
-        gridRow: "1 / 2",
-        margin: "15% .05vw 15% .05vw",
+        gridColumn: "2 / 3",
+        marginTop: "5%",
+        alignSelf: "center",
+        justifySelf: "center",
       }}
     >
       <Link
@@ -73,12 +79,10 @@ const Header = ({ siteTitle }) => (
       id="link-box"
       style={{
         margin: "5% 0 5% 0",
-
         display: "inline-grid",
-        gridColumnGap: ".5%",
-        gridRowGap: ".5%",
+        gridColumnGap: "5%",
+        gridRowGap: "5%",
         gridColumn: "3 / 4",
-        gridRow: "1 / 2",
       }}
     >
       <div
