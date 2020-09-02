@@ -45,7 +45,8 @@ const Layout = ({ children }) => {
         />
         <main
           style={{
-            alignItems: "centered",
+            alignItems: "center",
+            justifyItems: "center",
             display: "flex",
             flexDirection: "column",
           }}

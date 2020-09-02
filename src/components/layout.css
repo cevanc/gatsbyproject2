@@ -2,13 +2,9 @@
   
 } */
 
-#navbar-links {
-  text-align: center;
-}
-
 #link-container {
   /* background-color: white; */
-  padding: 0 0 0 0.45vw;
+  /* padding: 0 0 0 0.45vw; */
   width: 32px;
   display: grid;
   grid-template-columns: 100% 100%;

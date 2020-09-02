@@ -18,7 +18,7 @@ const Header = ({ siteTitle }) => (
       alignSelf: "center",
       gridColumnGap: "25px",
       position: "fixed",
-      //background: `rgb(139,0,139)`,
+      background: `rgb(139,0,139)`,
       border: ".5px solid black",
       padding: `0`,
       width: "100%",
@@ -41,9 +41,11 @@ const Header = ({ siteTitle }) => (
       id="navbar-links"
       style={{
         gridColumn: "2 / 3",
-        marginTop: "5%",
-        alignSelf: "center",
+        textAlign: "center",
         justifySelf: "center",
+        marginTop: "17.5%",
+        marginLeft: "9%",
+        alignSelf: "start",
       }}
     >
       <Link
@@ -78,7 +80,7 @@ const Header = ({ siteTitle }) => (
     <div
       id="link-box"
       style={{
-        margin: "5% 0 5% 0",
+        margin: "2% 0 5% 0",
         display: "inline-grid",
         gridColumnGap: "5%",
         gridRowGap: "5%",
