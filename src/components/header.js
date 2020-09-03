@@ -79,8 +79,10 @@ const Header = ({ siteTitle }) => (
       id="link-box"
       style={{
         justifySelf: "end",
-        margin: "7% 10% 0 0",
+        margin: "7% 10% 3vh 0",
         display: "grid",
+        gridTemplateColumns: "1fr 1fr",
+        gridTemplateRows: "1fr 1fr",
         gridColumnGap: "5%",
         gridRowGap: "5%",
         gridColumn: "3 / 4",
@@ -90,6 +92,7 @@ const Header = ({ siteTitle }) => (
         id="link-container"
         style={{
           gridColumn: "1/2",
+          gridRow: "1/2",
         }}
       >
         <a
@@ -107,6 +110,7 @@ const Header = ({ siteTitle }) => (
         id="link-container"
         style={{
           gridColumn: "2/3",
+          gridRow: "1/2",
         }}
       >
         <a
@@ -122,6 +126,7 @@ const Header = ({ siteTitle }) => (
         id="link-container"
         style={{
           gridColumn: "1/2",
+          gridRow: "2/3",
         }}
       >
         <a
@@ -137,6 +142,7 @@ const Header = ({ siteTitle }) => (
         id="link-container"
         style={{
           gridColumn: "2/3",
+          gridRow: "2/3",
         }}
       >
         <a
