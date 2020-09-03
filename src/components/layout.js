@@ -36,15 +36,6 @@ const Layout = ({ children }) => {
           paddingRight: "2vw",
         }}
       >
-        <div
-          id="spacer"
-          style={{
-            margin: `0 auto`,
-            width: "100vw",
-            height: "15vh",
-            paddingTop: `5%`,
-          }}
-        />
         <main
           style={{
             alignItems: "center",
