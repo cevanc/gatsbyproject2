@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="releases" />
     <div className="iFrameContainer">
       <iframe
         style={{ border: "0", width: "350px", height: "350px" }}

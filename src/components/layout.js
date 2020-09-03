@@ -27,6 +27,7 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
+        id="page-container"
         style={{
           margin: `0 0`,
           maxWidth: "100%",
@@ -39,8 +40,9 @@ const Layout = ({ children }) => {
           id="spacer"
           style={{
             margin: `0 auto`,
-            maxWidth: "100vw",
-            padding: `0 1.0875rem 6.5rem`,
+            width: "100vw",
+            height: "15vh",
+            paddingTop: `5%`,
           }}
         />
         <main

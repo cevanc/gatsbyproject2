@@ -11,16 +11,15 @@ const Header = ({ siteTitle }) => (
   <header
     style={{
       display: "grid",
-      gridTemplateColumns: "repeat(auto-fill, minmax(60px, 110px))",
+      gridTemplateColumns: "3fr 10fr 3fr",
       justifyItems: "center",
       alignItems: "start",
-      justifySelf: "start",
-      alignSelf: "center",
       gridColumnGap: "25px",
       position: "fixed",
       background: `rgb(139,0,139)`,
       border: ".5px solid black",
       padding: `0`,
+      marginBottom: "0",
       width: "100%",
     }}
   >
@@ -43,16 +42,16 @@ const Header = ({ siteTitle }) => (
         gridColumn: "2 / 3",
         textAlign: "center",
         justifySelf: "center",
-        marginTop: "17.5%",
-        marginLeft: "9%",
-        alignSelf: "start",
+
+        marginLeft: "0",
+        alignSelf: "center",
+        padding: "1%",
       }}
     >
       <Link
-        id="releases"
-        to="/"
+        id="other"
+        to="/page-2"
         style={{
-          border: "1px solid black",
           color: `white`,
           textDecoration: `none`,
           padding: "10px",
@@ -60,28 +59,28 @@ const Header = ({ siteTitle }) => (
           marginRight: "4px",
         }}
       >
-        Releases
+        Other
       </Link>
 
       <Link
-        id="other"
-        to="/page-2"
+        id="contact"
+        to="/contact"
         style={{
-          border: "1px solid black",
           color: `white`,
           textDecoration: `none`,
           padding: "10px",
           fontSize: "14px",
         }}
       >
-        Other
+        Contact
       </Link>
     </div>
     <div
       id="link-box"
       style={{
-        margin: "2% 0 5% 0",
-        display: "inline-grid",
+        justifySelf: "end",
+        margin: "7% 10% 0 0",
+        display: "grid",
         gridColumnGap: "5%",
         gridRowGap: "5%",
         gridColumn: "3 / 4",
@@ -99,7 +98,9 @@ const Header = ({ siteTitle }) => (
           target="_blank"
           rel="noreferrer"
         >
-          <Soundcloud />
+          <Soundcloud
+            style={{ boxShadow: "5px 10px", maxWidth: "100%", height: "auto" }}
+          />
         </a>
       </div>
       <div
