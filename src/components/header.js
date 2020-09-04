@@ -77,16 +77,18 @@ const Header = ({ siteTitle }) => (
     </div>
     <div
       id="link-box"
-      style={{
-        justifySelf: "end",
-        margin: "7% 10% 3vh 0",
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr",
-        gridTemplateRows: "1fr 1fr",
-        gridColumnGap: "5%",
-        gridRowGap: "5%",
-        gridColumn: "3 / 4",
-      }}
+      style={
+        {
+          // justifySelf: "end",
+          // margin: "7% 10% 3vh 0",
+          // display: "grid",
+          // gridTemplateColumns: "1fr 1fr",
+          // gridTemplateRows: "1fr 1fr",
+          // gridColumnGap: "5%",
+          // gridRowGap: "5%",
+          // gridColumn: "3 / 4",
+        }
+      }
     >
       <div
         id="link-container"
