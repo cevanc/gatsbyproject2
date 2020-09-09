@@ -18,7 +18,7 @@ const IndexPage = () => (
         </a>
       </iframe>
     </div>
-    <div classame="iFrameContainer">
+    <div className="iFrameContainer">
       <iframe
         width="350px%"
         title="bmtp18-19"

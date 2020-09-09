@@ -6,6 +6,12 @@ html,
 body {
   margin: 0;
 }
+
+.iFrameContainer {
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+}
+
 #link-container {
   width: 1.5rem;
   margin: 0 0 0 0;
@@ -17,7 +23,7 @@ body {
 }
 
 #link-box {
-  margin: 0.42rem 1rem 0.5rem 0;
+  margin: 0.42rem 1.5rem 1rem 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -32,10 +38,11 @@ body {
     flex-direction: row;
     justify-self: end;
     padding-top: 0.5rem;
+    padding-right: 0.5rem;
   }
-
+  // >1200
   @media (min-width: 1200px) {
-    padding-right: 2rem;
+    padding-right: 3rem;
   }
 }
 
