@@ -6,12 +6,10 @@ const Contact = () => {
   return (
     <Layout>
       <SEO title="contact" />
-      <h1 style={{ marginTop: "0%" }}>
-        GIVE ME YOUR EMAIL ADDRESS AND I'LL SIGN YOU UP FOR THINGS YOU'VE NEVER
-        EVEN HEARD OF BEFORE
+      <h1 style={{ marginTop: "5rem", fontSize: "16px" }}>
+        for all inquiries:{" "}
+        <a href="mailto: phytin4@gmail.com">phytin4@gmail.com</a>
       </h1>
-      <input />
-      <button type="submit">SUBMIT</button>
     </Layout>
   )
 }
