@@ -9,7 +9,7 @@ import Apple from "../components/apple"
 
 const Header = ({ siteTitle }) => {
   function hoverOver(event) {
-    event.target.style.backgroundColor = "white"
+    event.target.style.backgroundColor = "magenta"
   }
 
   function hoverOff(event) {
@@ -74,9 +74,10 @@ const Header = ({ siteTitle }) => {
             padding: "10px",
             fontSize: "14px",
             marginRight: "4px",
+            borderRadius: ".5rem",
           }}
         >
-          Other
+          ?
         </Link>
 
         <Link
@@ -89,6 +90,7 @@ const Header = ({ siteTitle }) => {
             textDecoration: `none`,
             padding: "10px",
             fontSize: "14px",
+            borderRadius: ".5rem",
           }}
         >
           Contact
