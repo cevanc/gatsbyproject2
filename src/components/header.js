@@ -42,12 +42,7 @@ const Header = ({ siteTitle }) => {
           gridColumn: "1/2",
         }}
       >
-        <Link
-          to="/"
-          style={{
-            borderBottomLeftRadius: "100% 100%",
-          }}
-        >
+        <Link to="/">
           <PhytinLogo />
         </Link>
       </div>
