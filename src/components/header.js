@@ -9,12 +9,14 @@ import Apple from "../components/apple"
 
 const Header = ({ siteTitle }) => {
   function hoverOver(event) {
-    event.target.style.backgroundColor = "magenta"
+    event.target.className = "animate__animated animate__fadeOut"
   }
 
   function hoverOff(event) {
-    event.target.style.backgroundColor = ""
+    event.target.className = "animate__animated animate__fadeIn"
+    event.target.style.transform = "style(1,-1)"
   }
+
   return (
     <header
       style={{
@@ -35,7 +37,10 @@ const Header = ({ siteTitle }) => {
     >
       <div
         id="logo-holder"
+        onMouseOver={hoverOver}
+        onMouseOut={hoverOff}
         style={{
+          display: "inline-block",
           alignSelf: "start",
           justifySelf: "start",
           margin: "0 0 0 0",
@@ -91,23 +96,11 @@ const Header = ({ siteTitle }) => {
           Contact
         </Link>
       </div>
-      <div
-        id="link-box"
-        style={
-          {
-            // justifySelf: "end",
-            // margin: "7% 10% 3vh 0",
-            // display: "grid",
-            // gridTemplateColumns: "1fr 1fr",
-            // gridTemplateRows: "1fr 1fr",
-            // gridColumnGap: "5%",
-            // gridRowGap: "5%",
-            // gridColumn: "3 / 4",
-          }
-        }
-      >
+      <div id="link-box">
         <div
           id="link-container"
+          onMouseOver={hoverOver}
+          onMouseOut={hoverOff}
           style={{
             gridColumn: "1/2",
             gridRow: "1/2",
@@ -130,6 +123,8 @@ const Header = ({ siteTitle }) => {
         </div>
         <div
           id="link-container"
+          onMouseOver={hoverOver}
+          onMouseOut={hoverOff}
           style={{
             gridColumn: "2/3",
             gridRow: "1/2",
@@ -146,6 +141,8 @@ const Header = ({ siteTitle }) => {
         </div>
         <div
           id="link-container"
+          onMouseOver={hoverOver}
+          onMouseOut={hoverOff}
           style={{
             gridColumn: "1/2",
             gridRow: "2/3",
@@ -162,6 +159,8 @@ const Header = ({ siteTitle }) => {
         </div>
         <div
           id="link-container"
+          onMouseOver={hoverOver}
+          onMouseOut={hoverOff}
           style={{
             gridColumn: "2/3",
             gridRow: "2/3",

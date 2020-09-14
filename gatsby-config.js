@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Phytiŋ`,
-    description: `Music - From Taipei to Columbus`,
+    description: `Music by Phytiŋ`,
     author: `@phytiŋ`,
   },
   plugins: [

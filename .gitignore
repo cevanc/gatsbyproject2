@@ -68,3 +68,5 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 
+# gimp working file for transparent logo
+src/images/phytin3.xcf

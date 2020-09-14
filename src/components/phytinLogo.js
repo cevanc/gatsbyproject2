@@ -8,19 +8,14 @@ const PhytinLogo = () => {
       phytinLogo: file(relativePath: { eq: "phytin3.png" }) {
         childImageSharp {
           fixed(width: 110) {
-            ...GatsbyImageSharpFixed
+            ...GatsbyImageSharpFixed_withWebp_tracedSVG
           }
         }
       }
     }
   `)
 
-  return (
-    <Img
-      fixed={data.phytinLogo.childImageSharp.fixed}
-      backgroundColor="rgb(139,0,139)"
-    />
-  )
+  return <Img fixed={data.phytinLogo.childImageSharp.fixed} />
 }
 
 export default PhytinLogo
