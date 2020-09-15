@@ -17,6 +17,10 @@ const Header = ({ siteTitle }) => {
     event.target.style.transform = "style(1,-1)"
   }
 
+  // function handleClick(event) {
+  //   event.target.className = "animate__animated animate__slideOutUp"
+  // }
+
   return (
     <header
       style={{
@@ -60,7 +64,6 @@ const Header = ({ siteTitle }) => {
 
           marginLeft: "0",
           alignSelf: "center",
-          padding: "1%",
         }}
       >
         <Link
@@ -71,9 +74,9 @@ const Header = ({ siteTitle }) => {
           style={{
             color: `white`,
             textDecoration: `none`,
-            padding: "10px",
-            fontSize: "14px",
-            marginRight: "4px",
+            margin: "2rem",
+            marginTop: ".5rem",
+            fontSize: "1.7rem",
             borderRadius: ".5rem",
           }}
         >
@@ -88,8 +91,9 @@ const Header = ({ siteTitle }) => {
           style={{
             color: `white`,
             textDecoration: `none`,
-            padding: "10px",
-            fontSize: "14px",
+            margin: "2rem",
+            marginRight: "1rem",
+            fontSize: "1.7rem",
             borderRadius: ".5rem",
           }}
         >
