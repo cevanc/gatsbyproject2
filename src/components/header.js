@@ -68,16 +68,16 @@ const Header = ({ siteTitle }) => {
         <Link
           onMouseOver={hoverOver}
           onMouseOut={hoverOff}
-          id="profile-link"
+          id="header-link"
           to="/page-2"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-            margin: "2rem",
-            marginTop: ".5rem",
-            fontSize: "1rem",
-            borderRadius: ".5rem",
-          }}
+          // style={{
+          //   color: `white`,
+          //   textDecoration: `none`,
+          //   margin: "2rem",
+          //   marginTop: ".5rem",
+
+          //   borderRadius: ".5rem",
+          // }}
         >
           ?
         </Link>
@@ -85,16 +85,17 @@ const Header = ({ siteTitle }) => {
         <Link
           onMouseOver={hoverOver}
           onMouseOut={hoverOff}
-          id="profile-link"
+          id="header-link"
           to="/contact"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-            margin: "2rem",
-            marginRight: "1rem",
-            fontSize: "1rem",
-            borderRadius: ".5rem",
-          }}
+          style={
+            {
+              // color: `white`,
+              // textDecoration: `none`,
+              // margin: "2rem",
+              // marginRight: "1rem",
+              // borderRadius: ".5rem",
+            }
+          }
         >
           Contact
         </Link>

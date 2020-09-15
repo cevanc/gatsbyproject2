@@ -34,7 +34,15 @@ body {
   }
 }
 
-#profile-link {
+#header-link {
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  margin: 2rem;
+  margin-top: 0.5rem;
+
+  border-radius: 0.5rem;
+
   @media (min-width: 480px) {
     font-size: 1.7rem;
   }
