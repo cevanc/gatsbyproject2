@@ -14,7 +14,6 @@ const Header = ({ siteTitle }) => {
 
   function hoverOff(event) {
     event.target.className = "animate__animated animate__fadeIn"
-    event.target.style.transform = "style(1,-1)"
   }
 
   // function handleClick(event) {
@@ -69,14 +68,14 @@ const Header = ({ siteTitle }) => {
         <Link
           onMouseOver={hoverOver}
           onMouseOut={hoverOff}
-          id="other"
+          id="profile-link"
           to="/page-2"
           style={{
             color: `white`,
             textDecoration: `none`,
             margin: "2rem",
             marginTop: ".5rem",
-            fontSize: "1.7rem",
+            fontSize: "1rem",
             borderRadius: ".5rem",
           }}
         >
@@ -86,14 +85,14 @@ const Header = ({ siteTitle }) => {
         <Link
           onMouseOver={hoverOver}
           onMouseOut={hoverOff}
-          id="contact"
+          id="profile-link"
           to="/contact"
           style={{
             color: `white`,
             textDecoration: `none`,
             margin: "2rem",
             marginRight: "1rem",
-            fontSize: "1.7rem",
+            fontSize: "1rem",
             borderRadius: ".5rem",
           }}
         >
