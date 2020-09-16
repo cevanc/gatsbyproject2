@@ -26,7 +26,7 @@ const Header = ({ siteTitle }) => {
         borderBottomLeftRadius: "50% 20%",
         borderBottomRightRadius: "50% 20%",
         display: "grid",
-        gridTemplateColumns: "3fr 10fr 3fr",
+        gridTemplateColumns: "5fr 15fr 4fr",
         justifyItems: "center",
         alignItems: "start",
         gridColumnGap: "25px",
