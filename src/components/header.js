@@ -87,15 +87,15 @@ const Header = ({ siteTitle }) => {
           onMouseOut={hoverOff}
           id="header-link"
           to="/contact"
-          style={
-            {
-              // color: `white`,
-              // textDecoration: `none`,
-              // margin: "2rem",
-              // marginRight: "1rem",
-              // borderRadius: ".5rem",
-            }
-          }
+          // style={
+          //   {
+          //     // color: `white`,
+          //     // textDecoration: `none`,
+          //     // margin: "2rem",
+          //     // marginRight: "1rem",
+          //     // borderRadius: ".5rem",
+          //   }
+          // }
         >
           Contact
         </Link>
