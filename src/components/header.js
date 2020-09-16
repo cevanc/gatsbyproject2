@@ -26,10 +26,10 @@ const Header = ({ siteTitle }) => {
         borderBottomLeftRadius: "50% 20%",
         borderBottomRightRadius: "50% 20%",
         display: "grid",
-        gridTemplateColumns: "5fr 15fr 4fr",
+        gridTemplateColumns: "2fr 15fr 2fr",
         justifyItems: "center",
         alignItems: "start",
-        gridColumnGap: "25px",
+        gridColumnGap: "2rem",
         position: "fixed",
         background: `rgb(139,0,139)`,
         border: ".5px solid black",
@@ -43,10 +43,9 @@ const Header = ({ siteTitle }) => {
         onMouseOver={hoverOver}
         onMouseOut={hoverOff}
         style={{
-          display: "inline-block",
           alignSelf: "start",
           justifySelf: "start",
-          margin: "0 0 0 0",
+          margin: "0",
           gridColumn: "1/2",
         }}
       >
@@ -59,10 +58,15 @@ const Header = ({ siteTitle }) => {
         style={{
           gridColumn: "2 / 3",
           textAlign: "center",
-          justifySelf: "center",
-
+          justifySelf: "stretch",
+          display: "flex",
+          flexWrap: "nowrap",
+          flexDirection: "row",
+          alignItems: "flex-start",
+          justifyContent: "space-evenly",
           marginLeft: "0",
           alignSelf: "center",
+          flexShrink: "1",
         }}
       >
         <Link
@@ -70,14 +74,6 @@ const Header = ({ siteTitle }) => {
           onMouseOut={hoverOff}
           id="header-link"
           to="/page-2"
-          // style={{
-          //   color: `white`,
-          //   textDecoration: `none`,
-          //   margin: "2rem",
-          //   marginTop: ".5rem",
-
-          //   borderRadius: ".5rem",
-          // }}
         >
           ?
         </Link>
@@ -87,15 +83,6 @@ const Header = ({ siteTitle }) => {
           onMouseOut={hoverOff}
           id="header-link"
           to="/contact"
-          // style={
-          //   {
-          //     // color: `white`,
-          //     // textDecoration: `none`,
-          //     // margin: "2rem",
-          //     // marginRight: "1rem",
-          //     // borderRadius: ".5rem",
-          //   }
-          // }
         >
           Contact
         </Link>
