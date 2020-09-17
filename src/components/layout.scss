@@ -24,8 +24,15 @@ body {
   padding-top: 2rem;
 }
 
+#logo-holder {
+  margin-left: 0.3rem;
+  @media (min-width: 480px) {
+    margin: 0;
+  }
+}
+
 #link-container {
-  width: 1.5rem;
+  width: 1.15rem;
   margin: 0 0 0 0;
 
   //goes away once it goes under 480px
@@ -51,6 +58,14 @@ body {
   @media (min-width: 480px) {
     font-size: 1.3rem;
   }
+}
+
+#mystery-link {
+  color: rgb(139, 0, 139);
+  text-decoration: none;
+  font-size: 3rem;
+  text-align: left;
+  width: 67%;
 }
 
 #headers {

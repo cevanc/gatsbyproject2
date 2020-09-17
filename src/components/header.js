@@ -45,7 +45,7 @@ const Header = ({ siteTitle }) => {
         style={{
           alignSelf: "start",
           justifySelf: "start",
-          margin: "0",
+
           gridColumn: "1/2",
         }}
       >
@@ -63,20 +63,21 @@ const Header = ({ siteTitle }) => {
           flexWrap: "nowrap",
           flexDirection: "row",
           alignItems: "flex-start",
-          justifyContent: "space-evenly",
+          justifyContent: "flex-end",
           marginLeft: "0",
           alignSelf: "center",
           flexShrink: "1",
         }}
       >
-        <Link
-          onMouseOver={hoverOver}
-          onMouseOut={hoverOff}
+        {/* <Link
+          onMouseOver={hoverOff}
+          onMouseOut={hoverOver}
           id="header-link"
           to="/page-2"
+          className="animate__animated animate__fadeOut"
         >
           ?
-        </Link>
+        </Link> */}
 
         <Link
           onMouseOver={hoverOver}

@@ -8,11 +8,19 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
+import { Link } from "gatsby"
 import Header from "./header"
 import "./layout.scss"
 
 const Layout = ({ children }) => {
+  function hoverOver(event) {
+    event.target.className = "animate__animated animate__fadeOut"
+  }
+
+  function hoverOff(event) {
+    event.target.className = "animate__animated animate__fadeIn"
+  }
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -38,6 +46,16 @@ const Layout = ({ children }) => {
         }}
       >
         {children}
+        <Link
+          onMouseOver={hoverOff}
+          onMouseOut={hoverOver}
+          id="mystery-link"
+          to="/page-2"
+          className="animate__animated animate__fadeOut"
+          style={{ textAlign: "left", width: "100%" }}
+        >
+          ?
+        </Link>
       </main>
     </>
   )
