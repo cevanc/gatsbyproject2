@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -56,17 +55,6 @@ const IndexPage = () => {
             Spiceal EP by Phytiŋ
           </a>
         </iframe>
-      </div>
-      <div>
-        {/* <Link
-          onMouseOver={hoverOff}
-          onMouseOut={hoverOver}
-          id="mystery-link"
-          to="/page-2"
-          className="animate__animated animate__fadeOut"
-        >
-          ?
-        </Link> */}
       </div>
     </Layout>
   )

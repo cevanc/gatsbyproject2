@@ -46,16 +46,20 @@ const Layout = ({ children }) => {
         }}
       >
         {children}
-        <Link
-          onMouseOver={hoverOff}
-          onMouseOut={hoverOver}
-          id="mystery-link"
-          to="/page-2"
-          className="animate__animated animate__fadeOut"
-          style={{ textAlign: "left", width: "100%" }}
+        <div
+          id="mystery-link-container"
+          style={{ textAlign: "left", width: "100%", marginLeft: "2rem" }}
         >
-          ?
-        </Link>
+          <Link
+            onMouseOver={hoverOff}
+            onMouseOut={hoverOver}
+            id="mystery-link"
+            to="/page-2"
+            className="animate__animated animate__fadeOut"
+          >
+            ?
+          </Link>
+        </div>
       </main>
     </>
   )

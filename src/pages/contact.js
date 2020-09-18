@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 const Contact = () => {
   function hoverOver(event) {
     event.target.className = "animate__animated animate__fadeOut"
+    event.target.style.textColor = "purple"
   }
 
   function hoverOff(event) {
