@@ -69,16 +69,17 @@ const Header = ({ siteTitle }) => {
           flexShrink: "1",
         }}
       >
-        {/* <Link
-          onMouseOver={hoverOff}
-          onMouseOut={hoverOver}
+        /*{" "}
+        <Link
+          onMouseOver={hoverOver}
+          onMouseOut={hoverOff}
           id="header-link"
-          to="/page-2"
-          className="animate__animated animate__fadeOut"
+          to="https://phytin.bandcamp.com/"
+          target="_blank"
         >
-          ?
-        </Link> */}
-
+          Bandcamp
+        </Link>{" "}
+        */
         <Link
           onMouseOver={hoverOver}
           onMouseOut={hoverOff}
