@@ -69,7 +69,7 @@ const Header = ({ siteTitle }) => {
           flexShrink: "1",
         }}
       >
-        /*{" "}
+        {" "}
         <Link
           onMouseOver={hoverOver}
           onMouseOut={hoverOff}
@@ -79,7 +79,6 @@ const Header = ({ siteTitle }) => {
         >
           Bandcamp
         </Link>{" "}
-        */
         <Link
           onMouseOver={hoverOver}
           onMouseOut={hoverOff}
