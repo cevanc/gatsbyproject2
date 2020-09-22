@@ -48,7 +48,7 @@ const Layout = ({ children }) => {
         {children}
         <div
           id="mystery-link-container"
-          style={{ textAlign: "left", width: "100%", marginLeft: "2rem" }}
+          style={{ textAlign: "left", marginLeft: "27rem" }}
         >
           <Link
             onMouseOver={hoverOff}
