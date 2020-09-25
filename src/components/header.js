@@ -58,12 +58,7 @@ const Header = ({ siteTitle }) => {
         style={{
           gridColumn: "2 / 3",
           textAlign: "center",
-          justifySelf: "stretch",
-          display: "flex",
-          flexWrap: "nowrap",
-          flexDirection: "row",
-          alignItems: "flex-start",
-          justifyContent: "flex-end",
+          justifySelf: "stretch",     
           alignSelf: "center",
           flexShrink: "1",
         }}
