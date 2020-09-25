@@ -64,7 +64,6 @@ const Header = ({ siteTitle }) => {
           flexDirection: "row",
           alignItems: "flex-start",
           justifyContent: "flex-end",
-          marginLeft: "0",
           alignSelf: "center",
           flexShrink: "1",
         }}
